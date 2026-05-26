@@ -1,4 +1,4 @@
-import { MessagingApp } from './messaging-app';
+import { MessagingApp } from '@/components/applets/messaging-app';
 
 export const metadata = {
     title: 'Tony Canvas | bitcomplete',

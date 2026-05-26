@@ -1,4 +1,4 @@
-import { React95Showcase } from '@/components/react95-showcase';
+import { React95Showcase } from '@/components/applets/react95-showcase';
 
 export const metadata = {
     title: 'React95 | the-bear',

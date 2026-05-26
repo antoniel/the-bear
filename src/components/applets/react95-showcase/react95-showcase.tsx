@@ -16,6 +16,7 @@ import {
     TextArea,
     TitleBar
 } from '@/lib/react95';
+import { Win95Window } from '@/components/win95/window';
 
 export function React95Showcase() {
     const [showModal, setShowModal] = useState(false);
@@ -24,17 +25,8 @@ export function React95Showcase() {
     const [plan, setPlan] = useState('home');
 
     return (
-        <Frame
-            bgColor='$material'
-            padding='$6'
-            style={{
-                minHeight: 'calc(100vh - 6rem)',
-                background: 'var(--background-color, #008080)'
-            }}>
-            <Frame
-                bgColor='$material'
-                padding='$4'
-                style={{ maxWidth: 720, margin: '0 auto' }}>
+        <Frame padding='$6' style={{ minHeight: 'calc(100vh - 3rem)', boxSizing: 'border-box' }}>
+            <Win95Window title='DesignSystem.exe' style={{ maxWidth: 720, margin: '0 auto' }}>
                 <h1 style={{ margin: '0 0 8px', fontSize: '1.25rem' }}>React95 components</h1>
                 <p style={{ margin: '0 0 16px' }}>
                     Windows 95 UI from{' '}
@@ -126,7 +118,7 @@ export function React95Showcase() {
                         </Modal.Content>
                     </Modal>
                 )}
-            </Frame>
+            </Win95Window>
         </Frame>
     );
 }

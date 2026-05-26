@@ -1,12 +1,5 @@
-import HomePage from '@/app/(delete-this-and-modify-page.tsx)/HomePage';
+import { Win95HomePage } from '@/components/win95/home-page';
 
-/**
- * The main page component that renders the HomePage component.
- *
- * @returns {JSX.Element} The rendered HomePage component.
- */
-const Page = () => {
-    return <HomePage />;
-};
-
-export default Page;
+export default function Page() {
+    return <Win95HomePage />;
+}

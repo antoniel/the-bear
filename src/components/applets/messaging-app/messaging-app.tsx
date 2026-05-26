@@ -13,7 +13,6 @@ import {
     WORKSPACE_NAME
 } from './messaging-app.data';
 
-const DESKTOP_BG = '#008080';
 const SELECTED_BG = '#000080';
 
 const SECTIONS: ConversationSection[] = ['starred', 'channels', 'dms'];
@@ -182,6 +181,7 @@ export function MessagingApp() {
                 });
 
                 if (items.length > 0) acc[section] = items;
+
                 return acc;
             },
             {} as Partial<Record<ConversationSection, Conversation[]>>
@@ -220,8 +220,7 @@ export function MessagingApp() {
         <Frame
             padding='$6'
             style={{
-                minHeight: 'calc(100vh - 6rem)',
-                background: DESKTOP_BG,
+                minHeight: 'calc(100vh - 3rem)',
                 boxSizing: 'border-box'
             }}>
             <Frame

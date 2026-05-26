@@ -1,10 +1,10 @@
-import { TonyCanvas } from '@/components/tony-canvas';
+import { MessagingApp } from './messaging-app';
 
 export const metadata = {
-    title: 'Tony Canvas | the-bear',
-    description: 'React95 hackathon playground'
+    title: 'Tony Canvas | bitcomplete',
+    description: 'Teamweek hackathon playground — React95 messaging UI'
 };
 
 export default function TonyCanvasPage() {
-    return <TonyCanvas />;
+    return <MessagingApp />;
 }

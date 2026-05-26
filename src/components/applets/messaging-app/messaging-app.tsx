@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 
 import { Avatar, Button, Frame, Input, List, TextArea, TitleBar } from '@/lib/react95';
+import { TASKBAR_HEIGHT } from '@/components/win95/app-shell';
 
 import {
     CONVERSATIONS,
@@ -220,21 +221,21 @@ export function MessagingApp() {
         <Frame
             padding='$6'
             style={{
-                minHeight: 'calc(100vh - 3rem)',
+                minHeight: `calc(100vh - ${TASKBAR_HEIGHT}px)`,
                 boxSizing: 'border-box'
             }}>
             <Frame
                 bgColor='$material'
                 style={{
                     maxWidth: 980,
-                    height: 'min(720px, calc(100vh - 8rem))',
+                    height: `min(720px, calc(100vh - ${TASKBAR_HEIGHT}px - 3rem))`,
                     margin: '0 auto',
                     display: 'flex',
                     flexDirection: 'column',
                     boxShadow:
                         'inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf'
                 }}>
-                <TitleBar active title='Teamweek.exe' style={{ padding: '2px 2px 3px' }}>
+                <TitleBar active title='Messenger.exe' style={{ padding: '2px 2px 3px' }}>
                     <TitleBar.OptionsBox>
                         <TitleBar.Minimize aria-label='Minimize' />
                         <TitleBar.Maximize aria-label='Maximize' />

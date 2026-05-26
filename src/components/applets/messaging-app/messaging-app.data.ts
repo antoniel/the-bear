@@ -405,39 +405,6 @@ export const CONVERSATIONS: Conversation[] = [
         ]
     },
     {
-        id: 'megan-dm',
-        section: 'dms',
-        kind: 'dm',
-        name: 'Megan Z Campbell',
-        initials: 'MC',
-        preview: 'Team name for the board?',
-        time: 'Yesterday',
-        unread: false,
-        online: false,
-        messages: [
-            {
-                id: 'm1',
-                sender: 'Megan',
-                text: 'Need the team name for the Teamweek board. Something professional… or at least pronounceable.',
-                sentAt: 'Yesterday at 4:00 PM',
-                outgoing: false
-            },
-            {
-                id: 'm2',
-                text: '"bitcomplete retrograde" — retro in the UI, grade in the code.',
-                sentAt: 'Yesterday at 4:05 PM',
-                outgoing: true
-            },
-            {
-                id: 'm3',
-                sender: 'Megan',
-                text: 'Registering it. If we win, Win95 laptop stickers for everyone.',
-                sentAt: 'Yesterday at 4:08 PM',
-                outgoing: false
-            }
-        ]
-    },
-    {
         id: 'dylan-dm',
         section: 'dms',
         kind: 'dm',

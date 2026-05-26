@@ -25,7 +25,8 @@ export function Win95HomePage() {
                             on the surface — a design system plus small applets you can open, break, and ship fast.
                         </p>
                         <p style={{ margin: 0, lineHeight: 1.5 }}>
-                            Pick a preview below or use the taskbar to jump in.
+                            Pick a preview below or open a program from the <strong>Start</strong> menu on
+                            the taskbar.
                         </p>
                     </Frame>
                 </Fieldset>
@@ -54,7 +55,7 @@ export function Win95HomePage() {
                     </Win95Window>
                 </PreviewLink>
 
-                <PreviewLink href='/applets'>
+                <PreviewLink href='/tony-canvas'>
                     <Win95Window title='Applets — preview' style={{ width: 300 }}>
                         <Fieldset legend='Installed'>
                             <Frame display='flex' flexDirection='column' gap='$4'>
@@ -79,7 +80,7 @@ export function Win95HomePage() {
                                     }}>
                                     Wil: does this run locally or is it a screenshot?
                                 </Frame>
-                                <Button style={{ width: '100%' }}>Browse applets</Button>
+                                <Button style={{ width: '100%' }}>Launch Messenger</Button>
                             </Frame>
                         </Fieldset>
                     </Win95Window>

@@ -16,6 +16,7 @@ import {
     TextArea,
     TitleBar
 } from '@/lib/react95';
+import { TASKBAR_HEIGHT } from '@/components/win95/app-shell';
 import { Win95Window } from '@/components/win95/window';
 
 export function React95Showcase() {
@@ -25,7 +26,7 @@ export function React95Showcase() {
     const [plan, setPlan] = useState('home');
 
     return (
-        <Frame padding='$6' style={{ minHeight: 'calc(100vh - 3rem)', boxSizing: 'border-box' }}>
+        <Frame padding='$6' style={{ minHeight: `calc(100vh - ${TASKBAR_HEIGHT}px)`, boxSizing: 'border-box' }}>
             <Win95Window title='DesignSystem.exe' style={{ maxWidth: 720, margin: '0 auto' }}>
                 <h1 style={{ margin: '0 0 8px', fontSize: '1.25rem' }}>React95 components</h1>
                 <p style={{ margin: '0 0 16px' }}>
